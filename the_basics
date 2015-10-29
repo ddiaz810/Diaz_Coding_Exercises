@@ -1,0 +1,99 @@
+#Exercises for The Basics (1)
+
+#=========================================================================================================================================
+
+#Topics: Strings, Symbols, Numbers, Nil, Operations, Type Conversion, Basic Data Structures, Expressions and Return, puts vs return
+
+#=========================================================================================================================================
+
+# 1) Add two strings together that, when concatenated, return your first and last name as your full name in one string.
+#Solution:
+
+"David "+"Diaz"
+#or
+"David"+" Diaz"
+
+# 2) Use the modulo operator, division, or a combination of both to take a 4 digit number and find 
+# 1. the thousands number 2. the hundreds 3. the tens and 4. and the ones.
+
+#Solution for 1,234:
+
+#1.
+1234/1000
+# => 1
+
+#2.
+1234/600
+# => 2
+
+#3.
+1234%1231
+# => 3
+
+#4.
+1234%1230
+# => 4
+
+# 3) Write a program that uses a hash to store a list of movie titles with the year they came out. Then use the puts 
+# command to make your program print out the year of each movie to the screen. The output for your program should look something like this. 
+
+#Solution:
+
+a = {:FWilly => '1995' , :Simpsons => '2002', :titanic => '1998'} #hit enter to display hashes, basically same thing with no "a ="
+#Next cmd:
+puts a [:titanic] , a [:FWilly] , a [:Simpsons] 
+#after enter, yields:
+1998
+1995
+2002
+
+# 4) Use the dates from the previous example and store them in an array. Then make your program output the same thing as exercise 3.
+
+#Solution:
+
+a = [1998, 1995, 2002] #hit enter to initiate array
+
+#show list of dates:
+puts a[0] , a[1] , a[2]
+#after enter, yields:
+1998
+1995
+2002
+#or 
+puts a[0]
+puts a[1]
+puts a[2]
+
+# 5) Write a program that outputs the factorial of the numbers 5, 6, 7, and 8.
+
+#Solution:
+
+puts 5*4*3*2*1, 6*5*4*3*2*1, 7*6*5*4*3*2*1, 8*7*6*5*4*3*2*1 #or line by line:
+puts 5*4*3*2*1 
+puts 6*5*4*3*2*1 
+puts 7*6*5*4*3*2*1 
+puts 8*7*6*5*4*3*2*1 # yields:
+120
+720
+5040
+40320
+
+# 6) Write a program that calculates the squares of 3 float numbers of your choosing and outputs the result to the screen.
+
+#Solution:
+
+puts 2.22*2.22, 3.3*3.3, 4.01*4.01 
+4.928400000000001
+10.889999999999999
+16.080099999999998 #or:
+puts 2.22*2.22
+puts 3.3*3.3
+puts 4.01*4.01
+
+# 7) What does the following error message tell you?
+ #SyntaxError: (irb):2: syntax error, unexpected ')', expecting '}'
+  #  from /usr/local/rvm/rubies/ruby-2.0.0-rc2/bin/irb:16:in `<main>'
+
+#Solution:
+There is a syntax error in irb session, where ')' was used instead of '}'
+There is a missing backet, found parenthesis instead.
